@@ -11,7 +11,6 @@ Future showAdaptiveAlert({
   ///弹窗里的设置
   final Widget? title,
   final Widget? content,
-  final List<Widget>? actions,
   final Text? leftText,
   final Text? rightText,
   void Function()? onLeftTap,
