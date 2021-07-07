@@ -58,6 +58,26 @@ class HomePage extends StatelessWidget {
                 );
               },
             ),
+            MaterialButton(
+              color: Theme.of(context).primaryColor,
+              child: Text('BottomSheet'),
+              onPressed: () {
+                showAdaptiveSheet(
+                  context: context,
+                  style: AdaptiveStyle.adaptive,
+                  maxheight: 400,
+                  isSafeArea: true,
+                  content: Column(
+                    children: [
+                      Container(
+                        height: 400,
+                        color: Theme.of(context).primaryColor,
+                      ),
+                    ],
+                  ),
+                );
+              },
+            ),
           ],
         ),
       ),
