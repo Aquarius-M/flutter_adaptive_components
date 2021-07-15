@@ -8,3 +8,5 @@ export 'src/adaptive_alertDialog/show_alertDialog.dart';
 export 'src/adaptive_okDialog/show_okDialog.dart';
 //botttomSheet
 export 'src/adaptive_bottomsheet/show_bottomsheet.dart';
+//table
+export 'src/custom_table/custom_table.dart';

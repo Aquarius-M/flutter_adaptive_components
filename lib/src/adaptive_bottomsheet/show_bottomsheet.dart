@@ -34,10 +34,10 @@ Future showAdaptiveSheet({
     ),
     builder: (BuildContext context) {
       return SafeArea(
-        top: isSafeArea??false,
-        bottom: isSafeArea??false,
-        left: isSafeArea??false,
-        right: isSafeArea??false,
+        top: isSafeArea ?? false,
+        bottom: isSafeArea ?? false,
+        left: isSafeArea ?? false,
+        right: isSafeArea ?? false,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -54,12 +54,14 @@ Future showAdaptiveSheet({
                 ),
                 child: SingleChildScrollView(
                   physics: BouncingScrollPhysics(),
-                  child: content ??
-                      Column(
-                        children: [
-                          Text('content'),
-                        ],
+                  child: Column(
+                    children: [
+                      Container(
+                        height: minheight,
+                        child: content ?? Text('content'),
                       ),
+                    ],
+                  ),
                 ),
               ),
             ),
